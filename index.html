@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For You ❤️</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         BACKGROUND MUSIC
+    =========================================== -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source
+            src="assets/music/birthday.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button id="musicButton"
+            class="music-button">
+
+        🎵
+
+    </button>
+
+
+
+    <!-- ==========================================
+         PAGE 1 — COUNTDOWN
+    =========================================== -->
+
+    <section id="countdownPage"
+             class="page countdown-page">
+
+
+        <div class="countdown-content">
+
+
+            <p class="small-heading">
+
+                Something special is waiting for you...
+
+            </p>
+
+
+            <h1>
+
+                Until Your
+                <br>
+
+                <span>Special Day</span> ❤️
+
+            </h1>
+
+
+            <p class="sub-text">
+
+                A little surprise made just for you
+
+            </p>
+
+
+            <!-- COUNTDOWN -->
+
+            <div class="countdown">
+
+
+                <div class="time-box">
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <small>
+                        Days
+                    </small>
+
+                </div>
+
+
+                <div class="colon">
+                    :
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        Hours
+                    </small>
+
+                </div>
+
+
+                <div class="colon">
+                    :
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        Minutes
+                    </small>
+
+                </div>
+
+
+                <div class="colon">
+                    :
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        Seconds
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- BEATING HEART -->
+
+            <div class="tiny-heart">
+                ❤️
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         PAGE 2 — BIRTHDAY REVEAL
+    =========================================== -->
+
+    <section id="birthdayReveal"
+             class="page birthday-reveal hidden">
+
+
+        <!-- FALLING PETALS -->
+
+        <div id="petalContainer">
+        </div>
+
+
+        <!-- ROSES -->
+
+        <div class="flowers">
+
+            <div class="rose rose1">
+                🌹
+            </div>
+
+            <div class="rose rose2">
+                🌹
+            </div>
+
+            <div class="rose rose3">
+                🌹
+            </div>
+
+            <div class="rose rose4">
+                🌹
+            </div>
+
+            <div class="rose rose5">
+                🌹
+            </div>
+
+        </div>
+
+
+        <!-- BIRTHDAY CONTENT -->
+
+        <div class="reveal-content">
+
+
+            <p class="reveal-small">
+
+                Today is your day...
+
+            </p>
+
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+
+            <h2 id="birthdayName">
+
+                My Love ❤️
+
+            </h2>
+
+
+            <p>
+
+                A little world of memories
+                <br>
+
+                is waiting for you.
+
+            </p>
+
+
+            <!-- MAIN BUTTON -->
+
+            <button id="openSurpriseButton"
+                    class="surprise-button">
+
+                Open Your Surprise ❤️
+
+            </button>
+
+
+            <!-- LITTLE SURPRISE BUTTON -->
+
+            <button id="littleSurpriseButton"
+                    class="little-surprise-button">
+
+                💌 Little Surprise for You
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         LITTLE SURPRISE — PAPER POPUP
+    =========================================== -->
+
+    <div id="surpriseModal"
+         class="surprise-modal hidden">
+
+
+        <!-- BLURRED BACKGROUND -->
+
+        <div id="surpriseBackground"
+             class="surprise-background">
+        </div>
+
+
+        <!-- CRUMPLED PAPER -->
+
+        <div class="crumpled-paper">
+
+
+            <!-- CLOSE -->
+
+            <button id="closeSurprise"
+                    class="close-surprise">
+
+                ×
+
+            </button>
+
+
+            <div class="paper-content">
+
+
+                <div class="paper-heart">
+                    ❤️
+                </div>
+
+
+                <h2>
+                    A Little Note
+                </h2>
+
+
+                <p id="surpriseMessage">
+
+                    Your special message goes here...
+
+                </p>
+
+
+                <div class="paper-signature">
+
+                    — With Love ❤️
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         PAGE 3 — MEMORY CARDS
+    =========================================== -->
+
+    <section id="memoryPage"
+             class="page memory-page hidden">
+
+
+        <div class="memory-header">
+
+
+            <p>
+
+                A little collection of us
+
+            </p>
+
+
+            <h1>
+
+                Our Memories ❤️
+
+            </h1>
+
+
+            <span>
+
+                Tap a card to open a memory
+
+            </span>
+
+
+        </div>
+
+
+        <!-- CARDS GENERATED BY JS -->
+
+        <div id="memoryContainer"
+             class="memory-container">
+
+        </div>
+
+
+        <div class="memory-footer">
+
+            Every memory with you is
+            a little piece of happiness. ❤️
+
+        </div>
+
+
+        <!-- FINAL MESSAGE BUTTON -->
+
+        <button id="finalMessageButton"
+                class="final-message-button">
+
+            One Last Thing ❤️
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         MEMORY POPUP
+    =========================================== -->
+
+    <div id="memoryModal"
+         class="modal hidden">
+
+
+        <!-- BLURRED BACKGROUND -->
+
+        <div id="modalBackground"
+             class="modal-background">
+        </div>
+
+
+        <!-- MODAL -->
+
+        <div class="memory-modal">
+
+
+            <!-- CLOSE -->
+
+            <button id="closeButton"
+                    class="close-button">
+
+                ×
+
+            </button>
+
+
+            <!-- IMAGE / VIDEO -->
+
+            <div id="modalMedia"
+                 class="modal-media">
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="modal-text">
+
+
+                <h2 id="modalTitle">
+
+                    Memory
+
+                </h2>
+
+
+                <p id="modalMessage">
+
+                    A beautiful memory.
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         PAGE 4 — FINAL MESSAGE
+    =========================================== -->
+
+    <section id="finalPage"
+             class="page final-page hidden">
+
+
+        <div class="final-content">
+
+
+            <p class="final-small">
+
+                One last thing...
+
+            </p>
+
+
+            <h1>
+
+                For You ❤️
+
+            </h1>
+
+
+            <div class="final-divider">
+
+                ✦
+
+            </div>
+
+
+            <p id="finalMessage"
+               class="final-message">
+
+            </p>
+
+
+            <div class="final-heart">
+
+                ❤️
+
+            </div>
+
+
+            <button id="replayButton"
+                    class="replay-button">
+
+                Experience It Again
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
